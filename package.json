@@ -1,0 +1,18 @@
+{
+  "name": "usafi-personal-care-store",
+  "version": "1.0.0",
+  "description": "MERN ecommerce app",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon backend/server.js"
+  },
+  "repository": "git@github.com:nickmwangemi/usafi-personal-care-store.git",
+  "author": "Nick Mwangemi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
