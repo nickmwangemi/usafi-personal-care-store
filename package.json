@@ -9,8 +9,8 @@
     "server": "nodemon backend/server.js",
     "client": "yarn --cwd frontend start",
     "dev": "concurrently \"yarn run server\" \"yarn run client\"",
-    "data:import":"node backend/seeder",
-    "data:destroy":"node backend/seeder -d"
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
   },
   "repository": "git@github.com:nickmwangemi/usafi-personal-care-store.git",
   "author": "Nick Mwangemi",
@@ -21,6 +21,7 @@
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
     "mongoose": "^5.10.9"
   },
   "devDependencies": {
