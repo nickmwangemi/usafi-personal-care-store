@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 const Rating = ({ value, text, color }) => {
     return (
         <div className='rating'>
+
             {/* 1st rating star */}
             <span>
                 < i style={{ color }}
@@ -17,7 +18,6 @@ const Rating = ({ value, text, color }) => {
                     }>
                 </i>
             </span>
-
 
             {/* 2nd rating star */}
             <span>
@@ -74,8 +74,6 @@ const Rating = ({ value, text, color }) => {
             <span >
                 {text && text}
             </span>
-
-
         </div>
     )
 }
