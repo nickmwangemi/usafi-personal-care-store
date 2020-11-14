@@ -6,6 +6,7 @@ import connectDB from './config/db.js'
 import colors from 'colors'
 
 import productRoutes from './routes/productRoutes.js'
+import userRoutes from './routes/userRoutes.js'
 
 /**
  * Read environment variables
@@ -19,7 +20,10 @@ connectDB()
 
 const app = express()
 
+app.use(express.json())
+
 app.use('/api/v1/products', productRoutes)
+app.use('/api/v1/users', userRoutes)
 
 const __dirname = path.resolve()
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
